@@ -5,12 +5,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest run --coverage",
+    "test:ui": "vitest --ui"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.1.3",
+    "@vitest/coverage-c8": "^0.25.6",
+    "@vitest/ui": "^0.25.6",
+    "c8": "^7.12.0",
     "nuxt": "3.0.0",
-    "sass": "^1.56.2"
+    "sass": "^1.56.2",
+    "vitest": "^0.25.6"
   }
 }
