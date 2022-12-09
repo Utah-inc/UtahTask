@@ -1,6 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/color-mode", "@nuxtjs/tailwindcss"],
+  modules: [
+    "@nuxtjs/color-mode",
+    "@nuxtjs/tailwindcss",
+    [
+      "@pinia/nuxt",
+      {
+        autoImports: ["defineStore"],
+      },
+    ],
+  ],
 
   tailwindcss: {
     cssPath: "~/assets/scss/tailwind.scss",
